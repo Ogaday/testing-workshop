@@ -1,0 +1,44 @@
+site_name: Testing Workshop
+
+plugins:
+- search
+
+markdown_extensions:
+# https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#configuration
+- admonition
+- pymdownx.details
+- pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.superfences
+
+extra_css:
+- stylesheets/extra.css
+
+theme:
+  name: material
+  logo: img/statera-horizontal-whitetxt.svg
+  favicon: img/statera-logo.svg
+  features:
+  # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-annotations
+  - content.code.annotate
+  # Palette toggle for dark mode
+  # See: https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#automatic-light-dark-mode
+  palette:
+  - media: "(prefers-color-scheme)"
+    toggle:
+      icon: material/brightness-auto
+      name: Switch to light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: statera-light
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: statera-dark
+    toggle:
+      icon: material/brightness-4
+      name: Switch to system preference

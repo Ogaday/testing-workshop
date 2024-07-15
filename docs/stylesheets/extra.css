@@ -1,0 +1,35 @@
+
+/* See: https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#automatic-light-dark-mode */
+:root {
+  --stat-blue:  #00a9ff;
+  --stat-green: #00d7a0;
+  --stat-navy:  #112135;
+  --stat-gray:  #D9D9D9;
+}
+
+[data-md-color-scheme="statera-light"] {
+    --md-primary-fg-color:        var(--stat-blue);
+    --md-primary-fg-color--light: var(--stat-blue);
+    --md-primary-fg-color--dark:  var(--stat-navy);
+
+    --md-typeset-a-color:         var(--stat-blue);
+    --md-accent-fg-color:         var(--stat-green);
+    --md-accent-bg-color:         var(--stat-green);
+
+    --md-footer-bg-color:         var(--stat-blue);
+    --md-text-link-color:         var(--stat-blue);
+  }
+
+[data-md-color-scheme="statera-dark"] {
+
+  --md-primary-fg-color:        var(--stat-navy);
+  --md-primary-fg-color--light: var(--stat-blue);
+  --md-primary-fg-color--dark:  var(--stat-navy);
+
+  --md-typeset-a-color:         var(--stat-blue);
+  --md-accent-fg-color:         var(--stat-green);
+  --md-accent-bg-color:         var(--stat-green);
+
+  --md-default-bg-color:        var(--stat-gray);
+  --md-footer-bg-color:         var(--stat-navy);
+}
