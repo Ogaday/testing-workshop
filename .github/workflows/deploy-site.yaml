@@ -6,7 +6,7 @@ name: Deploy Site
 on:
   push:
     branches:
-    - doc/gh-pages  # Change to main
+    - main
 
 permissions:
   contents: read

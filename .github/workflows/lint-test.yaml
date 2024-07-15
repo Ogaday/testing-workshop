@@ -3,7 +3,7 @@ name: 'Lint & Test'
 on: 
   push:
     branches:
-    - '!doc/gh-pages'  # change to main
+    - '!main'
   workflow_call:
 
 jobs:
