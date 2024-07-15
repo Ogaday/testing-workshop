@@ -2,8 +2,9 @@
 # https://github.com/actions/starter-workflows/blob/main/pages/static.yml
 # https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages#linking-separate-build-and-deploy-jobs
 name: Deploy Site
+
 on:
-- push:
+  push:
     branches:
     - doc/gh-pages  # Change to main
 
