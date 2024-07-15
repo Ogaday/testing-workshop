@@ -9,9 +9,9 @@ disable_error_code = "import-untyped"
 authors = ["Ogaday Willers Moore <w.ogaday@gmail.com>"]
 description = "Testing Workshop"
 name = "testing-workshop"
+package-mode = false
 readme = "README.md"
 version = "0.1.0"
-package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
