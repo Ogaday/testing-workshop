@@ -2,6 +2,9 @@
 build-backend = "poetry.core.masonry.api"
 requires = ["poetry-core"]
 
+[tool.mypy]
+disable_error_code = "import-untyped"
+
 [tool.poetry]
 authors = ["Ogaday Willers Moore <w.ogaday@gmail.com>"]
 description = "Testing Workshop"
@@ -21,10 +24,10 @@ vcrpy = "^6.0.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.4.2"
+ipython = "^8.26.0"
 isort = "^5.13.2"
 mypy = "^1.10.1"
 toml-sort = "^0.23.1"
-ipython = "^8.26.0"
 
 [tool.pytest.ini_options]
 markers = [
